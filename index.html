@@ -1,168 +1,303 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta name="google-site-verification" content="mS8y-oKxS0gHrWtw6lArV5W0IB4DjR2CjDnJIifimMs" />
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Manuel Riquelme Mardones | Ingeniería Civil Industrial</title>
+  <meta name="description" content="Perfil profesional y registro público de obras sociales e iniciativas comunitarias. Gestión, análisis técnico y mejora continua." />
   <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://manuelriquelmemardones.github.io/" />
 
-  <title>Manuel Riquelme Mardones | Perfil Profesional y Obras Sociales</title>
-  <meta name="description" content="Sitio personal de Manuel Riquelme Mardones. Perfil profesional y registro público de obras sociales y actividades comunitarias." />
-
-  <!-- Open Graph (vista previa al compartir) -->
-  <meta property="og:title" content="Manuel Riquelme Mardones | Perfil y Obras Sociales" />
-  <meta property="og:description" content="Perfil profesional y registro de obras sociales y actividades comunitarias." />
-  <meta property="og:type" content="website" />
-
-  <style>
-    :root { color-scheme: light dark; }
-    body{
-      margin:0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      line-height:1.55;
-      padding: 28px 18px;
-      max-width: 920px;
-      margin-inline: auto;
-    }
-    header{
-      margin-bottom: 18px;
-      padding-bottom: 14px;
-      border-bottom: 1px solid rgba(127,127,127,.25);
-    }
-    h1{ margin: 0 0 6px 0; font-size: 2rem; }
-    .subtitle{ margin:0; opacity:.85; }
-    nav a{
-      display:inline-block;
-      margin-right: 10px;
-      margin-top: 10px;
-      text-decoration:none;
-      padding: 8px 12px;
-      border: 1px solid rgba(127,127,127,.35);
-      border-radius: 10px;
-    }
-    section{
-      margin-top: 22px;
-      padding: 18px;
-      border: 1px solid rgba(127,127,127,.25);
-      border-radius: 14px;
-    }
-    h2{ margin-top:0; font-size: 1.25rem; }
-    ul{ margin: 8px 0 0 18px; }
-    .grid{
-      display:grid;
-      grid-template-columns: 1fr;
-      gap: 14px;
-    }
-    @media (min-width: 780px){
-      .grid{ grid-template-columns: 1fr 1fr; }
-    }
-    .pill{
-      display:inline-block;
-      padding: 4px 10px;
-      border-radius: 999px;
-      border: 1px solid rgba(127,127,127,.35);
-      margin: 4px 6px 0 0;
-      font-size: .92rem;
-      opacity: .95;
-    }
-    footer{
-      margin-top: 26px;
-      padding-top: 14px;
-      border-top: 1px solid rgba(127,127,127,.25);
-      opacity: .85;
-      font-size: .95rem;
-    }
-    .note{ opacity:.85; font-size:.95rem; }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <header>
-    <h1>Manuel Riquelme Mardones</h1>
-    <p class="subtitle">Ingeniero Civil Industrial | Gestión, análisis técnico y mejora continua</p>
+  <!-- Topbar -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <span class="brand__dot"></span>
+        <span class="brand__text">MRM</span>
+      </a>
 
-    <nav aria-label="Navegación principal">
-      <a href="obras.html">Obras sociales</a>
-      <a href="#perfil">Perfil</a>
-      <a href="#areas">Áreas</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#obras">Obras sociales</a>
+        <a href="#perfil">Perfil</a>
+        <a href="#areas">Áreas</a>
+        <a href="#contacto">Contacto</a>
+        <a class="btn btn--primary" href="obras.html">Ver registro</a>
+      </nav>
+
+      <button class="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Menú móvil -->
+    <div class="mobile" hidden>
+      <div class="container mobile__inner">
+        <a href="#obras">Obras sociales</a>
+        <a href="#perfil">Perfil</a>
+        <a href="#areas">Áreas</a>
+        <a href="#contacto">Contacto</a>
+        <a class="btn btn--primary" href="obras.html">Ver registro</a>
+      </div>
+    </div>
   </header>
 
-  <section id="perfil">
-    <h2>Perfil personal y profesional</h2>
-    <p>
-      Soy <strong>Manuel Riquelme Mardones</strong>. Este sitio reúne mi perfil profesional y un registro
-      transparente de iniciativas y <strong>obras sociales</strong> que quiero desarrollar en el tiempo.
-    </p>
-    <p class="note">
-      Objetivo: dejar evidencia pública, ordenada y verificable de actividades de impacto comunitario, junto con
-      información profesional básica.
-    </p>
-  </section>
+  <!-- Hero -->
+  <main id="inicio" class="hero">
+    <div class="container hero__grid">
+      <div class="hero__left">
+        <p class="kicker">Ingeniería Civil Industrial</p>
+        <h1>Manuel Riquelme Mardones</h1>
+        <p class="subtitle">
+          Gestión, análisis técnico y mejora continua. Este sitio reúne mi perfil profesional
+          y un registro público, ordenado y verificable de iniciativas y obras sociales.
+        </p>
 
-  <div class="grid">
-    <section id="areas">
-      <h2>Áreas de enfoque</h2>
-      <div>
-        <span class="pill">Gestión y mejora continua</span>
-        <span class="pill">Análisis técnico</span>
-        <span class="pill">Planificación</span>
-        <span class="pill">Estandarización</span>
-        <span class="pill">Trabajo colaborativo</span>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="obras.html">Ir a Obras Sociales</a>
+          <a class="btn btn--ghost" href="#perfil">Ver Perfil</a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="stat">
+            <div class="stat__num">Registro</div>
+            <div class="stat__txt">Obras y evidencias</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">Enfoque</div>
+            <div class="stat__txt">Resultados medibles</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">Gestión</div>
+            <div class="stat__txt">Planificación y control</div>
+          </div>
+        </div>
       </div>
 
-      <ul>
-        <li>Gestión de proyectos y control de avance</li>
-        <li>Análisis de información para toma de decisiones</li>
-        <li>Optimización de procesos y documentación</li>
-        <li>Enfoque en resultados medibles</li>
-      </ul>
-    </section>
+      <div class="hero__right">
+        <div class="panel">
+          <h2 class="panel__title">Acceso rápido</h2>
+          <div class="panel__links">
+            <a class="linkcard" href="obras.html">
+              <span class="linkcard__icon">🤝</span>
+              <span>
+                <strong>Obras sociales</strong>
+                <small>Listado cronológico + evidencia</small>
+              </span>
+            </a>
+            <a class="linkcard" href="#areas">
+              <span class="linkcard__icon">🧭</span>
+              <span>
+                <strong>Áreas de enfoque</strong>
+                <small>Gestión, análisis y estandarización</small>
+              </span>
+            </a>
+            <a class="linkcard" href="#contacto">
+              <span class="linkcard__icon">✉️</span>
+              <span>
+                <strong>Contacto</strong>
+                <small>Canales y coordinación</small>
+              </span>
+            </a>
+          </div>
+          <div class="panel__note">
+            Recomendación por obra: fecha, lugar, objetivo, acciones, evidencias (fotos/actas) y resultados.
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
-    <section>
-      <h2>Compromiso social</h2>
-      <p>
-        Este espacio está diseñado para documentar acciones solidarias y comunitarias: apoyo a organizaciones,
-        actividades de voluntariado, donaciones, proyectos de mejora en espacios comunes y otras iniciativas.
-      </p>
-      <p>
-        👉 Ir al registro: <strong><a href="obras.html">Obras sociales</a></strong>
-      </p>
-      <p class="note">
-        Recomendación para cada obra: fecha, lugar, objetivo, acciones realizadas, evidencias (fotos/actas) y resultados.
-      </p>
-    </section>
-  </div>
+  <!-- Sección Perfil -->
+  <section id="perfil" class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2>Perfil personal y profesional</h2>
+        <p>
+          Objetivo: dejar evidencia pública, ordenada y verificable de actividades de impacto comunitario,
+          junto con información profesional básica.
+        </p>
+      </div>
 
-  <section>
-    <h2>Cómo se registrarán las obras</h2>
-    <ul>
-      <li><strong>Listado general</strong> en <code>obras.html</code> (cronológico).</li>
-      <li>Una <strong>página por obra</strong> (ej.: <code>obras/2026-02-obra-01.html</code>).</li>
-      <li>Datos mínimos: fecha, lugar, descripción, responsables/colaboradores (si aplica) y resultado.</li>
-    </ul>
+      <div class="grid grid--2">
+        <article class="card">
+          <h3>Quién soy</h3>
+          <p>
+            Soy Manuel Riquelme Mardones. Ingeniero Civil Industrial orientado a la gestión,
+            el análisis técnico y la mejora continua.
+          </p>
+          <ul class="list">
+            <li>Gestión de proyectos y control de avance</li>
+            <li>Análisis de información para toma de decisiones</li>
+            <li>Optimización de procesos y documentación</li>
+            <li>Enfoque en resultados medibles</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Propósito del sitio</h3>
+          <p>
+            Centralizar mi perfil y el registro de obras sociales. Cada obra tendrá un estándar mínimo de documentación
+            para transparencia y trazabilidad.
+          </p>
+          <div class="badges">
+            <span class="badge">Transparencia</span>
+            <span class="badge">Trazabilidad</span>
+            <span class="badge">Impacto comunitario</span>
+            <span class="badge">Mejora continua</span>
+          </div>
+        </article>
+      </div>
+    </div>
   </section>
 
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p>
-      LinkedIn: <a href="https://www.linkedin.com/" target="_blank" rel="noopener">Agregar enlace aquí</a>
-      <br />
-      Correo: <a href="mailto:tu-correo@ejemplo.com">tu-correo@ejemplo.com</a>
-    </p>
-    <p class="note">
-      Nota: cambia el enlace de LinkedIn y el correo por los tuyos para que el sitio quede completo.
-    </p>
+  <!-- Sección Áreas -->
+  <section id="areas" class="section section--alt">
+    <div class="container">
+      <div class="section__head">
+        <h2>Áreas de enfoque</h2>
+        <p>Especialidades y enfoque de trabajo. Puedes ajustar estas áreas a tu perfil real.</p>
+      </div>
+
+      <div class="grid grid--3">
+        <article class="card">
+          <h3>Gestión y mejora continua</h3>
+          <p>Planificación, control, indicadores, estandarización y optimización.</p>
+          <div class="badges">
+            <span class="badge">KPIs</span>
+            <span class="badge">Procesos</span>
+            <span class="badge">Control</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Análisis técnico</h3>
+          <p>Diagnóstico, análisis de datos, reportabilidad y soporte a decisiones.</p>
+          <div class="badges">
+            <span class="badge">Datos</span>
+            <span class="badge">Informes</span>
+            <span class="badge">Calidad</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Trabajo colaborativo</h3>
+          <p>Coordinación, comunicación efectiva y mejora sostenida con equipos.</p>
+          <div class="badges">
+            <span class="badge">Colaboración</span>
+            <span class="badge">Coordinación</span>
+            <span class="badge">Ejecución</span>
+          </div>
+        </article>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    Última actualización: <span id="fecha"></span>
-    <script>
-      const d = new Date();
-      document.getElementById("fecha").textContent =
-        d.toLocaleDateString("es-CL", { year: "numeric", month: "long", day: "numeric" });
-    </script>
+  <!-- Sección Obras -->
+  <section id="obras" class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2>Compromiso social</h2>
+        <p>
+          Espacio diseñado para documentar acciones solidarias y comunitarias:
+          apoyo a organizaciones, voluntariado, donaciones y proyectos de mejora.
+        </p>
+      </div>
+
+      <div class="grid grid--2">
+        <article class="card">
+          <h3>Cómo se registrarán las obras</h3>
+          <ul class="list">
+            <li>Listado general en <strong>obras.html</strong> (cronológico).</li>
+            <li>Una página por obra (ej.: <code>/obras/2026-02-obra-01.html</code>).</li>
+            <li>Datos mínimos: fecha, lugar, objetivo, acciones, evidencias y resultado.</li>
+          </ul>
+          <a class="btn btn--primary" href="obras.html">Abrir registro</a>
+        </article>
+
+        <article class="card">
+          <h3>Estandar mínimo por obra</h3>
+          <ul class="list">
+            <li>Contexto y problema</li>
+            <li>Plan de acción</li>
+            <li>Ejecución (fotos/actas)</li>
+            <li>Resultados (antes/después)</li>
+            <li>Lecciones aprendidas</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="section section--alt">
+    <div class="container">
+      <div class="section__head">
+        <h2>Contacto</h2>
+        <p>Deja enlaces reales cuando los tengas (LinkedIn, correo, etc.).</p>
+      </div>
+
+      <div class="grid grid--2">
+        <article class="card">
+          <h3>Canales</h3>
+          <div class="contact">
+            <a class="contact__item" href="#" onclick="return false;">
+              <span>LinkedIn</span><small>Agregar enlace</small>
+            </a>
+            <a class="contact__item" href="#" onclick="return false;">
+              <span>Correo</span><small>Agregar correo</small>
+            </a>
+            <a class="contact__item" href="obras.html">
+              <span>Registro</span><small>Ver obras sociales</small>
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Nota</h3>
+          <p>
+            Este sitio está pensado para crecer: al inicio basta con el registro y luego se agregan
+            páginas por obra y anexos (actas, fotos y resultados).
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <small>© <span id="year"></span> Manuel Riquelme Mardones — Registro público de iniciativas y obras sociales.</small>
+      <small><a href="#inicio">Volver arriba</a></small>
+    </div>
   </footer>
+
+  <script>
+    // año automático
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // menú móvil
+    const btn = document.querySelector(".hamburger");
+    const mobile = document.querySelector(".mobile");
+    btn.addEventListener("click", () => {
+      const expanded = btn.getAttribute("aria-expanded") === "true";
+      btn.setAttribute("aria-expanded", String(!expanded));
+      mobile.hidden = expanded;
+      document.body.classList.toggle("no-scroll", !expanded);
+    });
+
+    // cerrar menú al hacer click
+    mobile?.querySelectorAll("a").forEach(a => {
+      a.addEventListener("click", () => {
+        btn.setAttribute("aria-expanded", "false");
+        mobile.hidden = true;
+        document.body.classList.remove("no-scroll");
+      });
+    });
+  </script>
 </body>
 </html>
+
