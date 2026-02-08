@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index, follow" />
+
+  <title>Obras Sociales | Manuel Enrique Memardones</title>
+  <meta name="description" content="Registro público y cronológico de obras sociales e iniciativas comunitarias realizadas por Manuel Enrique Memardones." />
+
+  <style>
+    :root { color-scheme: light dark; }
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height:1.55;
+      padding: 28px 18px;
+      max-width: 980px;
+      margin-inline: auto;
+    }
+    header{
+      margin-bottom: 18px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid rgba(127,127,127,.25);
+    }
+    h1{ margin: 0 0 6px 0; font-size: 2rem; }
+    .subtitle{ margin:0; opacity:.85; }
+    nav a{
+      display:inline-block;
+      margin-right: 10px;
+      margin-top: 10px;
+      text-decoration:none;
+      padding: 8px 12px;
+      border: 1px solid rgba(127,127,127,.35);
+      border-radius: 10px;
+    }
+    section{
+      margin-top: 18px;
+      padding: 18px;
+      border: 1px solid rgba(127,127,127,.25);
+      border-radius: 14px;
+    }
+    h2{ margin-top:0; font-size: 1.25rem; }
+    .note{ opacity:.85; font-size:.95rem; }
+    .card{
+      padding: 14px;
+      border: 1px solid rgba(127,127,127,.25);
+      border-radius: 12px;
+      margin-top: 12px;
+    }
+    .tag{
+      display:inline-block;
+      padding: 3px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(127,127,127,.35);
+      margin-right: 6px;
+      font-size: .9rem;
+      opacity: .95;
+    }
+    .meta{ opacity:.85; font-size:.95rem; margin-top:6px; }
+    .btn{
+      display:inline-block;
+      margin-top: 10px;
+      text-decoration:none;
+      padding: 8px 12px;
+      border: 1px solid rgba(127,127,127,.35);
+      border-radius: 10px;
+    }
+    footer{
+      margin-top: 26px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(127,127,127,.25);
+      opacity: .85;
+      font-size: .95rem;
+    }
+    code{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Obras Sociales</h1>
+    <p class="subtitle">Registro público y cronológico — Manuel Enrique Memardones</p>
+
+    <nav aria-label="Navegación">
+      <a href="index.html">Inicio</a>
+      <a href="#registro">Registro</a>
+      <a href="#como-publicar">Cómo publicar</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Propósito</h2>
+    <p>
+      Esta página documenta de forma transparente iniciativas, apoyos y obras sociales. El objetivo es mantener un
+      registro ordenado, verificable y actualizado.
+    </p>
+    <p class="note">
+      Sugerencia: para cada obra, registrar fecha, lugar, objetivo, actividades realizadas, evidencias (si aplica) y resultados.
+    </p>
+  </section>
+
+  <section id="registro">
+    <h2>Registro (cronológico)</h2>
+    <p class="note">A continuación se listan las obras. Cada obra puede tener una página propia para más detalle.</p>
+
+    <!-- ✅ EJEMPLO 1 (puedes editarlo o borrarlo) -->
+    <div class="card">
+      <div>
+        <span class="tag">Pendiente</span>
+        <span class="tag">Comunidad</span>
+      </div>
+      <h3>Obra Social #1 — Título de la iniciativa</h3>
+      <div class="meta">
+        <strong>Fecha:</strong> 2026-02-08 · <strong>Lugar:</strong> (Comuna/Región) · <strong>Estado:</strong> Planificada
+      </div>
+      <p>
+        Breve descripción (2–4 líneas): qué problema aborda, a quién ayuda y qué se realizará.
+      </p>
+      <!-- Cuando tengas página de detalle, descomenta y crea la ruta:
+      <a class="btn" href="obras/2026-02-obra-01.html">Ver detalle</a>
+      -->
+    </div>
+
+    <!-- ✅ EJEMPLO 2 -->
+    <div class="card">
+      <div>
+        <span class="tag">Pendiente</span>
+        <span class="tag">Donación</span>
+      </div>
+      <h3>Obra Social #2 — Título de la iniciativa</h3>
+      <div class="meta">
+        <strong>Fecha:</strong> 2026-03-01 · <strong>Lugar:</strong> (Comuna/Región) · <strong>Estado:</strong> En evaluación
+      </div>
+      <p>
+        Breve descripción: qué se donará o gestionará, beneficiarios y cómo se ejecutará.
+      </p>
+      <!-- <a class="btn" href="obras/2026-03-obra-02.html">Ver detalle</a> -->
+    </div>
+
+    <p class="note">
+      Para añadir una nueva obra: copia una “card”, cambia título/fecha/lugar/estado y guarda cambios.
+    </p>
+  </section>
+
+  <section id="como-publicar">
+    <h2>Cómo publicar una obra (plantilla rápida)</h2>
+    <ol>
+      <li>Agregar una nueva tarjeta en esta página (<code>obras.html</code>).</li>
+      <li>Opcional: crear una página de detalle en <code>/obras/AAAA-MM-obra-XX.html</code>.</li>
+      <li>Si hay evidencias (fotos), súbelas a <code>/assets/fotos/</code> y enlázalas.</li>
+      <li>Actualizar el estado: <strong>Planificada</strong> → <strong>En ejecución</strong> → <strong>Finalizada</strong>.</li>
+    </ol>
+
+    <p class="note">
+      Si quieres, te preparo la plantilla de “página de detalle” para cada obra (con secciones y formato estándar).
+    </p>
+  </section>
+
+  <footer>
+    Última actualización: <span id="fecha"></span>
+    <script>
+      const d = new Date();
+      document.getElementById("fecha").textContent =
+        d.toLocaleDateString("es-CL", { year: "numeric", month: "long", day: "numeric" });
+    </script>
+  </footer>
+</body>
+</html>
