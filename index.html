@@ -9,20 +9,19 @@
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://manuelriquelmemardones.github.io/" />
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="estyles.css" />
+  <!-- IMPORTANTE: apunta a styles.css -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <!-- Barra superior -->
   <header class="topbar">
     <div class="container topbar__inner">
-      <a class="brand" href="#inicio">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
         <span class="brand__dot"></span>
         <span class="brand__text">MRM</span>
       </a>
 
-      <nav class="nav">
+      <nav class="nav" aria-label="Navegación principal">
         <a href="#obras">Obras sociales</a>
         <a href="#perfil">Perfil</a>
         <a href="#areas">Áreas</a>
@@ -32,81 +31,100 @@
     </div>
   </header>
 
-  <!-- Hero -->
   <main id="inicio" class="hero">
     <div class="container hero__grid">
-      <div>
+      <div class="hero__left">
         <p class="kicker">Ingeniería Civil Industrial</p>
         <h1>Manuel Riquelme Mardones</h1>
         <p class="subtitle">
-          Gestión, análisis técnico y mejora continua.  
-          Registro público y verificable de iniciativas y obras sociales.
+          Gestión, análisis técnico y mejora continua. Este sitio reúne mi perfil profesional
+          y un registro público, ordenado y verificable de iniciativas y obras sociales.
         </p>
 
         <div class="hero__cta">
-          <a class="btn btn--primary" href="obras.html">Obras Sociales</a>
+          <a class="btn btn--primary" href="obras.html">Ir a Obras Sociales</a>
           <a class="btn btn--ghost" href="#perfil">Ver Perfil</a>
         </div>
       </div>
     </div>
   </main>
 
-  <!-- Perfil -->
   <section id="perfil" class="section">
     <div class="container">
-      <h2>Perfil personal y profesional</h2>
-      <p>
-        Soy Manuel Riquelme Mardones, Ingeniero Civil Industrial orientado a la
-        gestión, análisis técnico y mejora continua.
-      </p>
+      <div class="section__head">
+        <h2>Perfil personal y profesional</h2>
+        <p>
+          Objetivo: dejar evidencia pública, ordenada y verificable de actividades de impacto comunitario,
+          junto con información profesional básica.
+        </p>
+      </div>
 
-      <ul class="list">
-        <li>Gestión de proyectos y control de avance</li>
-        <li>Análisis de información para toma de decisiones</li>
-        <li>Optimización de procesos y documentación</li>
-        <li>Enfoque en resultados medibles</li>
-      </ul>
+      <div class="card">
+        <h3>Quién soy</h3>
+        <p>
+          Soy Manuel Riquelme Mardones. Ingeniero Civil Industrial orientado a la gestión,
+          el análisis técnico y la mejora continua.
+        </p>
+        <ul class="list">
+          <li>Gestión de proyectos y control de avance</li>
+          <li>Análisis de información para toma de decisiones</li>
+          <li>Optimización de procesos y documentación</li>
+          <li>Enfoque en resultados medibles</li>
+        </ul>
+      </div>
     </div>
   </section>
 
-  <!-- Áreas -->
   <section id="areas" class="section section--alt">
     <div class="container">
-      <h2>Áreas de enfoque</h2>
-      <ul class="list">
-        <li>Gestión y mejora continua</li>
-        <li>Análisis técnico</li>
-        <li>Planificación y control</li>
-        <li>Trabajo colaborativo</li>
-      </ul>
+      <div class="section__head">
+        <h2>Áreas de enfoque</h2>
+        <p>Especialidades y enfoque de trabajo.</p>
+      </div>
+
+      <div class="card">
+        <ul class="list">
+          <li>Gestión y mejora continua</li>
+          <li>Análisis técnico</li>
+          <li>Planificación y control</li>
+          <li>Trabajo colaborativo</li>
+        </ul>
+      </div>
     </div>
   </section>
 
-  <!-- Obras -->
   <section id="obras" class="section">
     <div class="container">
-      <h2>Compromiso social</h2>
-      <p>
-        Registro de acciones solidarias, voluntariados y proyectos de impacto
-        comunitario.
-      </p>
+      <div class="section__head">
+        <h2>Compromiso social</h2>
+        <p>Registro de acciones solidarias, voluntariados y proyectos de impacto comunitario.</p>
+      </div>
+
       <a class="btn btn--primary" href="obras.html">Ir al registro</a>
     </div>
   </section>
 
-  <!-- Contacto -->
   <section id="contacto" class="section section--alt">
     <div class="container">
-      <h2>Contacto</h2>
-      <p>Próximamente enlaces de contacto.</p>
+      <div class="section__head">
+        <h2>Contacto</h2>
+        <p>Próximamente enlaces de contacto.</p>
+      </div>
     </div>
   </section>
 
   <footer class="footer">
     <div class="container footer__inner">
-      <small>© 2026 Manuel Riquelme Mardones</small>
+      <small>© <span id="year"></span> Manuel Riquelme Mardones</small>
+      <small><a href="#inicio">Volver arriba</a></small>
     </div>
   </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
 
+ 
+ 
