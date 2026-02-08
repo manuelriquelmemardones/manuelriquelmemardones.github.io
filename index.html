@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index, follow" />
+
+  <title>Manuel Riquelme Mardones | Perfil Profesional y Obras Sociales</title>
+  <meta name="description" content="Sitio personal de Manuel Riquelme Mardones. Perfil profesional y registro público de obras sociales y actividades comunitarias." />
+
+  <!-- Open Graph (vista previa al compartir) -->
+  <meta property="og:title" content="Manuel Riquelme Mardones | Perfil y Obras Sociales" />
+  <meta property="og:description" content="Perfil profesional y registro de obras sociales y actividades comunitarias." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root { color-scheme: light dark; }
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height:1.55;
+      padding: 28px 18px;
+      max-width: 920px;
+      margin-inline: auto;
+    }
+    header{
+      margin-bottom: 18px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid rgba(127,127,127,.25);
+    }
+    h1{ margin: 0 0 6px 0; font-size: 2rem; }
+    .subtitle{ margin:0; opacity:.85; }
+    nav a{
+      display:inline-block;
+      margin-right: 10px;
+      margin-top: 10px;
+      text-decoration:none;
+      padding: 8px 12px;
+      border: 1px solid rgba(127,127,127,.35);
+      border-radius: 10px;
+    }
+    section{
+      margin-top: 22px;
+      padding: 18px;
+      border: 1px solid rgba(127,127,127,.25);
+      border-radius: 14px;
+    }
+    h2{ margin-top:0; font-size: 1.25rem; }
+    ul{ margin: 8px 0 0 18px; }
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+    @media (min-width: 780px){
+      .grid{ grid-template-columns: 1fr 1fr; }
+    }
+    .pill{
+      display:inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(127,127,127,.35);
+      margin: 4px 6px 0 0;
+      font-size: .92rem;
+      opacity: .95;
+    }
+    footer{
+      margin-top: 26px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(127,127,127,.25);
+      opacity: .85;
+      font-size: .95rem;
+    }
+    .note{ opacity:.85; font-size:.95rem; }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Manuel Riquelme Mardones</h1>
+    <p class="subtitle">Ingeniero Civil Industrial | Gestión, análisis técnico y mejora continua</p>
+
+    <nav aria-label="Navegación principal">
+      <a href="obras.html">Obras sociales</a>
+      <a href="#perfil">Perfil</a>
+      <a href="#areas">Áreas</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="perfil">
+    <h2>Perfil personal y profesional</h2>
+    <p>
+      Soy <strong>Manuel Riquelme Mardones</strong>. Este sitio reúne mi perfil profesional y un registro
+      transparente de iniciativas y <strong>obras sociales</strong> que quiero desarrollar en el tiempo.
+    </p>
+    <p class="note">
+      Objetivo: dejar evidencia pública, ordenada y verificable de actividades de impacto comunitario, junto con
+      información profesional básica.
+    </p>
+  </section>
+
+  <div class="grid">
+    <section id="areas">
+      <h2>Áreas de enfoque</h2>
+      <div>
+        <span class="pill">Gestión y mejora continua</span>
+        <span class="pill">Análisis técnico</span>
+        <span class="pill">Planificación</span>
+        <span class="pill">Estandarización</span>
+        <span class="pill">Trabajo colaborativo</span>
+      </div>
+
+      <ul>
+        <li>Gestión de proyectos y control de avance</li>
+        <li>Análisis de información para toma de decisiones</li>
+        <li>Optimización de procesos y documentación</li>
+        <li>Enfoque en resultados medibles</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Compromiso social</h2>
+      <p>
+        Este espacio está diseñado para documentar acciones solidarias y comunitarias: apoyo a organizaciones,
+        actividades de voluntariado, donaciones, proyectos de mejora en espacios comunes y otras iniciativas.
+      </p>
+      <p>
+        👉 Ir al registro: <strong><a href="obras.html">Obras sociales</a></strong>
+      </p>
+      <p class="note">
+        Recomendación para cada obra: fecha, lugar, objetivo, acciones realizadas, evidencias (fotos/actas) y resultados.
+      </p>
+    </section>
+  </div>
+
+  <section>
+    <h2>Cómo se registrarán las obras</h2>
+    <ul>
+      <li><strong>Listado general</strong> en <code>obras.html</code> (cronológico).</li>
+      <li>Una <strong>página por obra</strong> (ej.: <code>obras/2026-02-obra-01.html</code>).</li>
+      <li>Datos mínimos: fecha, lugar, descripción, responsables/colaboradores (si aplica) y resultado.</li>
+    </ul>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>
+      LinkedIn: <a href="https://www.linkedin.com/" target="_blank" rel="noopener">Agregar enlace aquí</a>
+      <br />
+      Correo: <a href="mailto:tu-correo@ejemplo.com">tu-correo@ejemplo.com</a>
+    </p>
+    <p class="note">
+      Nota: cambia el enlace de LinkedIn y el correo por los tuyos para que el sitio quede completo.
+    </p>
+  </section>
+
+  <footer>
+    Última actualización: <span id="fecha"></span>
+    <script>
+      const d = new Date();
+      document.getElementById("fecha").textContent =
+        d.toLocaleDateString("es-CL", { year: "numeric", month: "long", day: "numeric" });
+    </script>
+  </footer>
+</body>
+</html>
