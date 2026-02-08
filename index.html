@@ -9,8 +9,8 @@
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://manuelriquelmemardones.github.io/" />
 
-<link rel="stylesheet" href="estilos.css" />
-
+  <!-- CSS (tu archivo se llama estilos.css) -->
+  <link rel="stylesheet" href="./estilos.css" />
 </head>
 
 <body>
@@ -283,21 +283,24 @@
     // menú móvil
     const btn = document.querySelector(".hamburger");
     const mobile = document.querySelector(".mobile");
-    btn.addEventListener("click", () => {
-      const expanded = btn.getAttribute("aria-expanded") === "true";
-      btn.setAttribute("aria-expanded", String(!expanded));
-      mobile.hidden = expanded;
-      document.body.classList.toggle("no-scroll", !expanded);
-    });
 
-    // cerrar menú al hacer click
-    mobile?.querySelectorAll("a").forEach(a => {
-      a.addEventListener("click", () => {
-        btn.setAttribute("aria-expanded", "false");
-        mobile.hidden = true;
-        document.body.classList.remove("no-scroll");
+    // Seguridad: si no existe el botón (por cambios futuros), no rompe el sitio
+    if (btn && mobile) {
+      btn.addEventListener("click", () => {
+        const expanded = btn.getAttribute("aria-expanded") === "true";
+        btn.setAttribute("aria-expanded", String(!expanded));
+        mobile.hidden = expanded;
+        document.body.classList.toggle("no-scroll", !expanded);
       });
-    });
+
+      mobile.querySelectorAll("a").forEach(a => {
+        a.addEventListener("click", () => {
+          btn.setAttribute("aria-expanded", "false");
+          mobile.hidden = true;
+          document.body.classList.remove("no-scroll");
+        });
+      });
+    }
   </script>
 </body>
 </html>
